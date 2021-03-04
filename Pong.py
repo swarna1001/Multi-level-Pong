@@ -1,7 +1,4 @@
 import turtle
-import tkinter as tk
-from tkinter import Button
-from tkinter import ttk
 
 wn = turtle.Screen()
 wn.setup(width=1000, height=700)
@@ -259,7 +256,7 @@ def medium_game_loop(b1_color, b2_color, winning_score):
         ball2.setx(ball2.xcor() + ball2.dx)
         ball2.sety(ball2.ycor() + ball2.dy)
 
-        # paddle and ball  collisions
+        # paddle and ball 1  collisions
 
         if ball.xcor() > 430 and paddle_b.ycor() + 120 > ball.ycor() > paddle_b.ycor() - 120:
             ball.dx *= -1
@@ -267,7 +264,7 @@ def medium_game_loop(b1_color, b2_color, winning_score):
         elif ball.xcor() < -430 and (paddle_a.ycor() + 120 > ball.ycor() > paddle_a.ycor() - 120):
             ball.dx *= -1
 
-        # paddle and ball2 collision
+        # paddle and ball 2 collision
         if ball2.xcor() > 430 and paddle_b.ycor() + 120 > ball2.ycor() > paddle_b.ycor() - 120:
             ball2.dx *= -1
 
@@ -421,7 +418,7 @@ def hard_game_loop(b1_color, b2_color, b3_color, winning_score):
         ball3.setx(ball3.xcor() + ball3.dx)
         ball3.sety(ball3.ycor() + ball3.dy)
 
-        # paddle and ball1  collisions
+        # paddle and ball 1  collisions
 
         if ball.xcor() > 430 and paddle_b.ycor() + 120 > ball.ycor() > paddle_b.ycor() - 120:
             ball.dx *= -1
@@ -429,7 +426,7 @@ def hard_game_loop(b1_color, b2_color, b3_color, winning_score):
         elif ball.xcor() < -430 and (paddle_a.ycor() + 120 > ball.ycor() > paddle_a.ycor() - 120):
             ball.dx *= -1
 
-        # paddle and ball2 collision
+        # paddle and ball 2 collision
         if ball2.xcor() > 430 and paddle_b.ycor() + 120 > ball2.ycor() > paddle_b.ycor() - 120:
             ball2.dx *= -1
 
