@@ -10,8 +10,8 @@ Multi Level version of the classic Pong game!
     * **S** for Down
 
 2. Player B:
-    * **&#8593** for Up
-    * **&#8595** for Down
+    * ⬆ key for Up
+    * ⬇ key for Down
 
 
 
