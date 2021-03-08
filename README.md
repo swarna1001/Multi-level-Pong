@@ -12,6 +12,9 @@ Multi Level version of the classic Pong game!
 2. Player B:
     * ⬆ key for Up
     * ⬇ key for Down
+    
+    
+<img src = images/image_1.png width="900">
 
 
 
